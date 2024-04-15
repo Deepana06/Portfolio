@@ -3,45 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Deepana Dhakshinamurthy - Data Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header-text">
+                <h1>Deepana Dhakshinamurthy</h1>
+                <h2>Data Engineer</h2>
+            </div>
+        </div>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is where you can introduce yourself.</p>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#intro" onclick="showSection('intro')">About Myself</a></li>
+                <li><a href="#skills" onclick="showSection('skills')">Technical Skills</a></li>
+                <li><a href="#experience" onclick="showSection('experience')">Experience</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Academic Projects</a></li>
+                <li><a href="#github" onclick="showSection('github')">GitHub</a></li>
+                <li><a href="Deepana_Dhakshinamurthy_Resume.pdf" download>Download Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="intro" class="section">
+        <div class="container">
+			<img src="Deepana_Photo.jpg" alt="Your Photo" width="300" height="400">
+            <h2>About Myself</h2>
+            <p>
+				An experienced Data Engineer with more than 8 years in the IT industry, showcasing robust skills in Database management, 
+			Data visualizations, ETL tools, report tools, Data analysis, SQL, cloud platforms, Normalizations, and Database designing. 
+			Specializing in the Insurance, Healthcare, and Financial domains, demonstrating expertise and proficiency.
+			
+			Throughout my career, I have collaborated with stakeholders and teams to understand complex business requirements, 
+			conducted thorough Data Analysis and Visualization tasks, optimized reports and dashboards, 
+			and deployed advanced SQL queries and ETL Packages, contributing significantly to operational efficiency and cost reduction.</p>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
+    <section id="skills" class="section" style="display: none;">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, SQL, HTML/CSS, C, C++</li>
+                <li>Python Libraries: Pandas, Numpy, Matplotlib, Scikit-learn, TensorFlow, SciPy, Seaborn, Plotly, PyTorch, NLTK</li>
+                <li>BI Tools: SSIS, SSRS, PowerBI, Tableau, AWS Glue, Azure Data Factory</li>
+				<li>Database Management Systems: SQL Server, Oracle, NoSQL, MySQL, AWS RDS, Azure SQL Database</li>
+				<li>Version Control: TFS, GitHub, Tortoise, SVN</li>
+				<li>Office Suite: Microsoft Word, PowerPoint and Excel, Google sheets, Microsoft 365, Outlook, OneNote</li>
+				<li>Machine Learning: Classification, Regression, Clustering, Multivariate Analysis, Random Forest, Bayesian Methods, 
+					Linear Models, Decision Trees, KNN, Neural Networks, Convolutional and Recurrent Neural Networks</li>
+            </ul>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at example@email.com.</p>
+    <section id="experience" class="section" style="display: none;">
+        <div class="container">
+            <h2>Experience</h2>
+            <h2>Cognizant Technology Solutions</h2>
+            <h2>Designation:</h2>
+			<li>Senior Associate/Technical Lead</li>
+			<h2>Tools/Programming Language:</h2>
+			<li>SQL, SSIS (ETL), PowerBI, Tableau, Python, SSRS</li>
+			<h2>Duration:</h2>
+			<li>November 2017 to June 2023</li>
+			<h2>Responsibilities:</h2>
+			<li>Engaged in Financial, Insurance, Healthcare related technical projects collaborating with Stake holders and cross-functional teams to understand business requirements and providing technical support
+•	Lead technical projects and guided junior resources on their daily technical tasks
+•	Conducted Data Analysis, Cleaning, Manipulation, and Visualization (EDA) tasks on large datasets using Python, resolved 20% of anomalies during the analysis process, contributing to data quality improvement 
+•	Crafted and optimized reports, dashboards using PowerBI and Tableau to streamline daily job loading processes and continuously monitor key metrics (KPI), resulting in a notable 30% improvement in operational efficiency
+•	Optimized long running SQL procedures and attained 50% cost reduction earning interim hikes and promotion
+•	Accomplished a migration project from Perl to SQL/SSIS platform which completely removed Perl dependency in the job scheduler and achieved 30% cost savings by (received STAR award)
+•	Acquired mastery in Data Warehousing, Data Management, Database designing, Indexing, Normalization, Data Integration, ETL pipelines, QA testing and data visualizations
+•	Proven proficiency in debugging and manipulating data using SQL, and Excel functions (Pivot, VLOOKUP), for Data Analysis, Cleanup, and other business process, leading to the successful resolution of 70% of critical defects
+</li>
+            <h2>Merit Software Services (P) Ltd</h2>
+            <h2>Designation:</h2>
+			<li>SQL developer</li>
+			<h2>Tools/Programming Language:</h2>
+			<li>SQL Server ,SSIS ,C# (Script Task), SSRS</li>
+			<h2>Duration:</h2>
+			<li>October 2016 to October 2017</li>
+			<h2>Responsibilities:</h2>
+			<li>Designed SQL, SSRS reports and SSIS packages based on back-end requirements (.NET web portal)
+•	Automated a manual data loading process by implementing SSIS packages integrated with SQL procedures in a 
+SQL server agent on daily basis. Successfully increased the data loading efficiency by 40%
+•	Implemented Error Handling in the automation process by triggering emails automatically and notifying relevant teams 
+</li>
+		<h2>Capgemini</h2>
+            <h2>Designation:</h2>
+			<li>Senior Software Engineer</li>
+			<h2>Tools/Programming Language:</h2>
+			<li>SQL Server ,SSIS , SSRS</li>
+			<h2>Duration:</h2>
+			<li>July 2014 to September 2016</li>
+			<h2>Responsibilities:</h2>
+			<li>Analyzing data in SQL and reports generation using SSRS 
+•	Designed a Data Cleansing process and eliminated irrelevant data using SSIS
+•	Enhanced File Transfer Process (FTP) by 40% (utilized SSIS and replaced the usage of command prompt)</li>
+        </div>
+    </section>
+
+    <section id="projects" class="section" style="display: none;">
+        <div class="container">
+            <h2>Academic Projects</h2>
+            <h2>FITHUB Management System </h2>
+			<h2>Programming Language:</h2>
+			<li>MySQL, NoSQL, Python</li>
+			<h2>Description:</h2>
+			<li>Designed ER diagrams, schema, Relational model and Designed Database related to all the entities of Fithub data management system
+•	Developed store procedures, functions, Triggers, views to monitor the User details and daily activities within the system
+•	Utilized Python script to develop EDA visualizations to analyse various trends </li>
+			<h2>Crime dataset Analysis </h2>
+			<h2>Programming Language:</h2>
+			<li>Python</li>
+			<h2>Description:</h2>
+			<li>Utilized time series forecasting methods like ARIMA to examine customer behaviour and forecast future trends.
+			This involved thorough data cleaning and conducting several exploratory data analysis (EDA) tasks to gain insights 
+			into the dataset's characteristics and patterns</li>
+			<h2>Customer segmentation</h2>
+			<h2>Programming Language:</h2>
+			<li>Python</li>
+			<h2>Description:</h2>
+			<li>Focused on customer segmentation using Python. This involves applying several analytical techniques to better understand customer behaviour and preferences. 
+Two key methods used were RFM analysis (Recency, Frequency, Monetary) and the K-means clustering technique.
+RFM analysis is a method commonly used in marketing and retail to segment customers based on three main criteria:
+Recency: How recently a customer made a purchase or interacted with the business.
+Frequency: How often a customer makes purchases or engages with the business over a specific period.
+Monetary: How much money a customer spends on purchases or transactions within a given timeframe.
+By analysing these factors, RFM analysis helps categorize customers into different segments such as high-value customers, loyal customers, potential churners, etc. 
+In addition to RFM analysis, employed the K-means clustering technique. In the context of customer segmentation, 
+K-means clustering helps identify groups of customers with similar characteristics or purchasing behaviours.</li>
+			<h2>EEG Classification</h2>
+			<h2>Programming Language/Technology:</h2>
+			<li>Python, Machine Learning</li>
+			<h2>Description:</h2>
+			<li>Utilizing a range of machine learning methods such as Logistic Regression, Recurrent Neural Networks (RNNs), 
+			and Convolutional Neural Networks (CNNs), conducted a comprehensive analysis of patients with seizures and those without seizures. 
+			This involved training and evaluating models to accurately classify EEG data, distinguishing between seizure and non-seizure patterns.
+			The performance of these models was rigorously assessed using standard metrics including accuracy, precision, and F1 score.</li>
+			<h2>S&P 500 Stock Analysis</h2>
+			<h2>Programming Language/Technology:</h2>
+			<li>Python, Machine Learning</li>
+			<h2>Description:</h2>
+			<li>Performed an in-depth analysis of the S&P 500 stock values, 
+			gathering historical data from associated firms within the S&P index.
+			To assess the influence of these variables on the S&P 500 stock price and predict future trends, 
+			I employed various Machine Learning Models. These included Linear Regression, Random Forest, and Decision Tree algorithms. 
+			By leveraging these models, I aimed to understand the intricate relationships between the performance of constituent stocks 
+			and the overall S&P 500 index, enhancing forecasting capabilities and strategic decision-making in stock market investments.</li>
+        </div>
+    </section>
+
+    <section id="github" class="section" style="display: none;">
+        <div class="container">
+            <h2>GitHub Repository</h2>
+            <p>Visit my GitHub repository for more projects and code samples.</p>
+            <a href="https://github.com/Deepana06" target="_blank">GitHub Profile</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <div class="container">
+            <p>&copy; 2024 Deepana Dhakshinamurthy</p>
+        </div>
     </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections first
+            document.querySelectorAll('.section').forEach(function (section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>

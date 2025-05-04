@@ -3,57 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepana Dhakshinamurthy - Senior Data Engineer</title>
+    <title>Deepana Dhakshinamurthy - Data Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 960px;
-            margin: auto;
-            padding: 20px;
-        }
-        header, nav, section, footer {
-            margin-bottom: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav a {
-            text-decoration: none;
-            padding: 8px 16px;
-            background-color: #007BFF;
-            color: white;
-            border-radius: 4px;
-        }
-        nav a:hover {
-            background-color: #0056b3;
-        }
-        .section {
-            display: none;
-        }
-        .section.active {
-            display: block;
-        }
-        img {
-            border-radius: 8px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-text">
                 <h1>Deepana Dhakshinamurthy</h1>
-                <h2>Senior Data Engineer</h2>
+                <h2>Data Engineer</h2>
             </div>
         </div>
     </header>
@@ -70,8 +28,7 @@
             </ul>
         </div>
     </nav>
-
-    <section id="intro" class="section active">
+<section id="intro" class="section active">
         <div class="container">
             <img src="Deepana_photo.jpg" alt="Deepana Photo" width="300" height="400">
             <h2>About Myself</h2>
@@ -230,8 +187,8 @@
 			
         </div>
     </section>
-	
-	<section id="github" class="section" style="display: none;">
+
+    <section id="github" class="section" style="display: none;">
         <div class="container">
             <h2>GitHub Repository</h2>
             <p>Visit my GitHub repository for more projects and code samples.</p>
@@ -248,18 +205,21 @@
     </div>
 </section>
 
-
     <footer>
         <div class="container">
-            <p>© 2025 Deepana Dhakshinamurthy. All rights reserved.</p>
+            <p>&copy; 2024 Deepana Dhakshinamurthy</p>
         </div>
     </footer>
 
     <script>
-        function showSection(id) {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => section.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
+        function showSection(sectionId) {
+            // Hide all sections first
+            document.querySelectorAll('.section').forEach(function (section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
         }
     </script>
 </body>

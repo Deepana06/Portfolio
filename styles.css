@@ -8,6 +8,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    overflow: hidden; /* Prevents container from scrolling */
 }
 
 header {
@@ -40,7 +41,14 @@ nav ul li a {
 
 .section {
     padding: 20px 0;
-    background-color: #fff; /* White background for sections */
+    background-color: #fff;
+    min-height: 400px;  /* Set a minimum height for sections */
+    overflow: hidden;  /* Prevent individual sections from scrolling */
+}
+
+.tab-content {
+    max-height: 400px;  /* Limit the height of the tab contents */
+    overflow-y: auto;   /* Allow vertical scrolling within the tab content */
 }
 
 footer {

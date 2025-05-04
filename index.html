@@ -213,14 +213,14 @@
 
     <script>
         function showSection(sectionId) {
-            // Hide all sections first
-            document.querySelectorAll('.section').forEach(function (section) {
-                section.style.display = 'none';
-            });
+    // Hide all sections
+    let sections = document.querySelectorAll('.section');
+    sections.forEach(section => section.classList.remove('active'));
 
-            // Show the selected section
-            document.getElementById(sectionId).style.display = 'block';
-        }
+    // Show the selected section
+    let activeSection = document.getElementById(sectionId);
+    activeSection.classList.add('active');
+}
     </script>
 </body>
 </html>

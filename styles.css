@@ -4,7 +4,14 @@ body {
     padding: 0;
     background-color: #f0f0f0; /* Light gray background */
 }
+.section {
+    display: none;
+}
 
+/* Show the active section */
+.active {
+    display: block;
+}
 .container {
     width: 80%;
     margin: 0 auto;

@@ -1,9 +1,13 @@
+/* General Body Styling */
 body {
-    font-family: Times New Roman, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #f4f7fa;
+    color: #333;
 }
+
+/* Sections */
 .section {
     display: none;
 }
@@ -12,57 +16,98 @@ body {
 .active {
     display: block;
 }
+
+/* Container */
 .container {
-    width: 80%;
+    width: 85%;
+    max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden; /* Prevents container from scrolling */
+    padding: 20px;
 }
 
+/* Header Styling */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 0;
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px 0;
     text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+/* Navigation Styling */
 nav {
-    background-color: #444;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #34495e;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
     text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ecf0f1;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-.section {
-    padding: 20px 0;
-    background-color: #fff;
-    min-height: 400px;  /* Set a minimum height for sections */
-    margin-bottom: 20px; /* Space between sections */
-}
-
-footer {
-    background-color: #333;
+nav ul li a:hover {
+    background-color: #1abc9c;
     color: #fff;
+}
+
+/* Section Styling */
+.section {
+    padding: 30px;
+    background-color: #ffffff;
+    min-height: 400px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
 }
 
-/* Remove scroll-related styles from tab-content */
+/* Tab content */
 .tab-content {
-    height: auto; /* Let the content expand naturally */
-    overflow: visible; /* Prevent internal scrolling */
+    height: auto;
+    overflow: visible;
 }
 
+/* Resume link button style */
+a.download-resume {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+a.download-resume:hover {
+    background-color: #16a085;
+}
